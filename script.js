@@ -1,39 +1,39 @@
 let heads = 0;
 let tails = 0;
 let coin = document.querySelector(".coin");
-let flipButton = document.querySelector("#flip-button");
-let resetButton = document.querySelector("#reset-button");
+let flipButton = document.querySelector("#flipButton");
+let resetButton = document.querySelector("#resetButton");
 
 flipButton.addEventListener("click", () => {
   let result = Math.floor(Math.random() * 2);
-  coin.style.animation = none;
+  coin.style.animation = "none";
 
   if (result) {
     setTimeout(function () {
-      coin.style.animation = "spin-heads 3s forwards";
+      coin.style.animation = "spin-heads 2.5s forwards";
     }, 100);
     heads++;
   } else {
     setTimeout(function () {
-      coin.style.animation = "spin-tails 3s forwards";
+      coin.style.animation = "spin-tails 2.5s forwards";
     }, 100);
     tails++;
   }
 
-  setTimeout(updateStats, 3000);
+  setTimeout(updateStats, 2500);
   disableButton();
 });
 
 function updateStats() {
-  document.querySelector("#heads-count").textContent = `Heads: ${heads}`;
-  document.querySelector("#tails-count").textContent = `Tails: ${tails}`;
+  document.querySelector("#headsCount").textContent = `Heads: ${heads}`;
+  document.querySelector("#tailsCount").textContent = `Tails: ${tails}`;
 }
 
 function disableButton() {
   flipButton.disabled = true;
   setTimeout(function () {
     flipButton.disabled = false;
-  }, 3000);
+  }, 2500);
 }
 
 resetButton.addEventListener("click", () => {
