@@ -35,3 +35,10 @@ function disableButton() {
     flipButton.disabled = false;
   }, 3000);
 }
+
+resetButton.addEventListener("click", () => {
+  coin.style.animation = "none";
+  heads = 0;
+  tails = 0;
+  updateStats();
+});
