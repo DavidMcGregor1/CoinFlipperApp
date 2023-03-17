@@ -10,6 +10,7 @@ body {
     background-color: rgb(41, 56, 70);
 }
 
+
 .container {
     background-color: white;
     width: 400px;
@@ -27,7 +28,7 @@ body {
 .stats {
     text-align: right;
     color: black;
-    font-weight: 500;
+    font-weight: bold;
 
 }
 
@@ -81,13 +82,13 @@ body {
 button{
     width: 120px;
     padding: 10px 0;
-    border: 2.5px solid #424ae0;
+    border: 3.5px solid #724C9D;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #flip-button{
-    background-color: #424ae0;
+    background-color: #724C9D;
     color: #ffffff;
 }
 
