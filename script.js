@@ -28,3 +28,10 @@ function updateStats() {
   document.querySelector("#heads-count").textContent = `Heads: ${heads}`;
   document.querySelector("#tails-count").textContent = `Tails: ${tails}`;
 }
+
+function disableButton() {
+  flipButton.disabled = true;
+  setTimeout(function () {
+    flipButton.disabled = false;
+  }, 3000);
+}
