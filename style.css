@@ -23,3 +23,10 @@ body {
     -webkit-perspective: 300px;
     perspective: 300px;
 }
+
+.stats {
+    text-align: right;
+    color: black;
+    font-weight: 500;
+    
+}
